@@ -1,0 +1,100 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Header */
+header {
+  position: fixed;
+  width:100%;
+  align-items: center;
+  background-color: #3ba13b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* nebo flex-start pokud chceš všechno vlevo */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+
+}
+.menu{
+  color: white;
+  margin: 0;
+}
+
+.links {
+  
+  display: flex;
+  gap: 20px;
+  padding-right: 3em;
+  border-radius: 10%;
+  
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  animation-timing-function: calc(0.8s);
+  border-radius: 20%;
+  
+}
+
+
+.header a {
+  
+  gap: 5px;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+   
+}
+
+.header a:hover {
+  background-color: #14611b;
+  
+  border-radius: 15%;
+}
+
+.hero-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white; /* můžeš přizpůsobit */
+}
+
+.cenik {
+  background-color: #3ba13b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cenik img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
